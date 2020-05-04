@@ -1,11 +1,20 @@
 import React from "react";
+import Counter from "./Counter";
 export default function Navigation() {
+  const nav = [
+    <a href="https://lisabianca.dk" key="home">
+      Home
+    </a>,
+    <br key="break" />,
+    <a href="https://lisabianca.dk" key="contact">
+      Contact
+    </a>,
+  ];
   return (
     <nav>
       <ul>
-        <li>Nav one</li>
-        <li>Nave two</li>
-        <li>Nav three</li>
+        {nav}
+        <Counter />
       </ul>
     </nav>
   );
