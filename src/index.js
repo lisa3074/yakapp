@@ -1,17 +1,81 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+/* function PrimaryButton() {
+  return <button className="primary">Click me!</button>;
+}
+function SecondaryButton() {
+  return <button className="secondary">Click me!</button>;
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+function Form(props) {
+  return (
+    <form>
+      <fieldset>
+        <legend>Form</legend>
+        <input id="name" />
+        <button className="primary">Primary</button>
+      </fieldset>
+    </form>
+  );
+}
+
+function Card(props) {
+  return (
+    <li className="card">
+      <h3>Card {props.header}</h3> 
+      <PrimaryButton />
+      <SecondaryButton />
+    </li>
+  );
+}
+//LISTS
+function List(props) {
+  return (
+    <section>
+      <h2>{props.header}</h2>
+      <ul>
+        <Card />
+        <Card />
+      </ul>
+      <Form />
+    </section>
+  );
+}
+
+//NAVIGATION
+function Navigation() {
+  return (
+    <nav>
+      <ul>
+        <li>Nav one</li>
+        <li>Nave two</li>
+        <li>Nav three</li>
+      </ul>
+    </nav>
+  );
+}
+
+//THE CONTAINER OF LISTS
+function Main() {
+  return (
+    <main>
+      <List header="To do" />
+      <List header="Doing" />
+      <List header="Done" />
+    </main>
+  );
+}
+
+//THE CONTAINER OF ALL
+function App() {
+  return (
+    <section className="all">
+      <Navigation />
+      <Main />
+    </section>
+  );
+} */
+ReactDOM.render(<App />, document.getElementById("root"));
